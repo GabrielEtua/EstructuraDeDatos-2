@@ -585,7 +585,7 @@ int main() {
     }
     else{
         // Caso 2: Existe CSV
-        if(hayMatriz(nombreArchivo,filas,columnas)){
+        if(!hayMatriz(nombreArchivo,filas,columnas)){
             cout << "2222222222" << endl;
             // Caso 2.1: Existe CSV pero no hay matriz, crear uno con matriz de ceros
             crearZeroCSV(nombreArchivo,filas,columnas);

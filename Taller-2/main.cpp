@@ -575,23 +575,18 @@ int main() {
     // Empieza siempre el jugador "Tú"
     bool participante = true;
 
-    cout << "00000000000" << endl;
-
     // Verificar si hay un archivo CSV existente
     if(!hayCSV(nombreArchivo)){
-        cout << "1111111111" << endl;
         // Caso 1: No existe CSV, crear uno con matriz de ceros
         crearZeroCSV(nombreArchivo,filas,columnas);
     }
     else{
         // Caso 2: Existe CSV
         if(!hayMatriz(nombreArchivo,filas,columnas)){
-            cout << "2222222222" << endl;
             // Caso 2.1: Existe CSV pero no hay matriz, crear uno con matriz de ceros
             crearZeroCSV(nombreArchivo,filas,columnas);
         }
         else{
-            cout << "3333333333" << endl;
             // Caso 2.2: Existe CSV y hay matriz, iniciar el juego
             while(juegoPartida){
                 // Se crea la variable MÁS IMPORTANTE la que decide en que columna se jugara

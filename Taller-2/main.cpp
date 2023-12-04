@@ -578,7 +578,7 @@ int main() {
     cout << "00000000000" << endl;
 
     // Verificar si hay un archivo CSV existente
-    if(hayCSV(nombreArchivo)){
+    if(!hayCSV(nombreArchivo)){
         cout << "1111111111" << endl;
         // Caso 1: No existe CSV, crear uno con matriz de ceros
         crearZeroCSV(nombreArchivo,filas,columnas);

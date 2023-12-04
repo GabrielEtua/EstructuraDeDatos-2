@@ -576,13 +576,13 @@ int main() {
     bool participante = true;
 
     // Verificar si hay un archivo CSV existente
-    if(!hayCSV(nombreArchivo)){
+    if(hayCSV(nombreArchivo)){
         // Caso 1: No existe CSV, crear uno con matriz de ceros
         crearZeroCSV(nombreArchivo,filas,columnas);
     }
     else{
         // Caso 2: Existe CSV
-        if(!hayMatriz(nombreArchivo,filas,columnas)){
+        if(hayMatriz(nombreArchivo,filas,columnas)){
             // Caso 2.1: Existe CSV pero no hay matriz, crear uno con matriz de ceros
             crearZeroCSV(nombreArchivo,filas,columnas);
         }

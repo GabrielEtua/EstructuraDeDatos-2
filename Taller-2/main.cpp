@@ -575,6 +575,8 @@ int main() {
     // Empieza siempre el jugador "Tú"
     bool participante = true;
 
+    cout << "lOOOOOOOOL" << endl;
+
     // Verificar si hay un archivo CSV existente
     if(hayCSV(nombreArchivo)){
         // Caso 1: No existe CSV, crear uno con matriz de ceros

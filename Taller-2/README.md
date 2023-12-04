@@ -24,17 +24,13 @@ Si el archivo está corrupto o no coincide con el formato esperado, reinicia el 
 Algoritmo de Inteligencia Artificial (Minimax):
 El algoritmo Minimax se utiliza para los movimientos de la CPU.
 Fácil: Selecciona aleatoriamente una columna.
-Medio: Evalúa posibles movimientos utilizando una heurística simple.
-Difícil: Aplica una heurística más sofisticada para un juego estratégico.
+Medio: Evalúa gracias a un algoritmo simple un buen movimiento.
+Difícil: Aplica un algoritmo más complejo para elegir el mejor lugar.
 
 Estado del Juego:
-El estado del juego, incluido el tablero y los movimientos del jugador, se muestra durante el juego.
+El estado del juego se muestra durante el proceso del juego.
 El programa indica al ganador, un empate o el final del juego.
 
 Limpieza:
 El codigo borra ("delete") tanto las matrices como el arbol creado.
 Muestra estadísticas sobre la cantidad de movimientos del jugador y la CPU.
-
-Nota:
-El programa genera tres espacios como separadores en el archivo CSV para que coincida con el formato de la matriz proporcionada.
-Se anima al usuario a explorar y modificar el código según sea necesario.
